@@ -1,0 +1,54 @@
+@import vars
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+html
+	font-size: 100%
+body
+	background: yellow
+	font-size: 1rem
+	min-width: 320px
+	position: relative
+	line-height: 1.375
+	font-family: 'Roboto', sans-serif
+	font-weight: 300
+	overflow-x: hidden
+	color: $text
+	margin: 0
+.header
+	padding: 32px 0
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	justify-content: space-between
+.page__cell
+	 max-width: 1180px
+	 margin: 0 auto
+.header__contacts
+	display: -webkit-flex
+	display: -ms-flex
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+.phone-number
+	font-weight: 700
+	font-size: 1.56rem
+	color: $text
+	text-decoration: none
+	padding-bottom: 1px
+.email-address
+	color: $grey
+	text-decoration: none
+	text-align: right
